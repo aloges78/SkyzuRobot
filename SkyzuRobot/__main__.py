@@ -84,24 +84,23 @@ PM_START_TEXT = """
 *Hello {} !*
 ────────────────────────
 ✪ my name is Sasa - I can help you manage groups!  Invite me to your group now.
-✪ Maintained by @jatimpride28 ✨
 ────────────────────────
 Hit the /help to see available command.
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅ​", callback_data="help_back"),
+        InlineKeyboardButton(text="•ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅ•​", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="Skyzu_"),
-        InlineKeyboardButton(text="ᴛʀʏ ɪɴʟɪɴᴇ​", switch_inline_query_current_chat=""),
+        InlineKeyboardButton(text="•ᴀʙᴏᴜᴛ•", callback_data="Skyzu_"),
+        InlineKeyboardButton(text="​•ᴍᴜsɪᴄ•", callback_data="source_"),
     ],
     [
         InlineKeyboardButton(
-            text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​", url="https://github.com/Skyzu/SkyzuRobot"
+            text="•ᴅᴇᴠ•​", url="t.me/jatimpride28"
         ),
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="​•sᴜᴘᴘᴏʀᴛ•", callback_data="Skyzu_support"),
     ],
     [
         InlineKeyboardButton(
@@ -371,14 +370,14 @@ def Skyzu_about_callback(update, context):
     query = update.callback_query
     if query.data == "Skyzu_":
         query.message.edit_text(
-            text="๏ I'm *Skyzu*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *Sasa*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_Skyzu's licensed under the GNU General Public License v3.0_"
+            "\n\n_Sasa's licensed under the GNU General Public License v3.0_"
             "\n\n Click on button bellow to get basic help for SkyzuRobot.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -465,9 +464,9 @@ def Skyzu_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url="t.me/skyzusupport"),
+                        InlineKeyboardButton(text="Support​", url="https://t.me/juvenileeeeee"),
                         InlineKeyboardButton(
-                            text="ᴜᴘᴅᴀᴛᴇs​", url="https://t.me/ProjectSkyzu"
+                            text="Channel​", url="https://t.me/ngikkkkkg"
                         ),
                     ],
                     [
@@ -485,7 +484,7 @@ def Skyzu_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Skyzu", url="t.me/xflskyzu"),
+                        InlineKeyboardButton(text="muk", url="t.me/jatimpride28"),
                     ],
                     [
                         InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_"),
